@@ -1,0 +1,91 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200%;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+    
+}
+
+.box1{
+    background-color: blue;
+
+}
+
+.box2{
+    background-color: brown;
+
+}
+
+.box3{
+    background-color: darkolivegreen;
+
+}
+
+.box4{
+    background-color: blueviolet;
+
+}
+
+.box5{
+    background-color: chartreuse;
+
+}
+
+.box6{
+    background-color: deeppink;
+
+}
+
+.box7{
+    background-color: red;
+
+}
+
+.box8{
+    background-color: forestgreen;
+
+}
+
+.box9{
+    background-color: orangered;
+
+}
+
+@media only screen and (max-width:768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200%;
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+    }
+    .box3{
+        display: none;
+    }
+    .box5{
+        display: none;
+    }
+    .box6{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:321px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200%;
+        grid-column-gap: 10px;
+        grid-row-gap: 1em;
+    }
+    .box1{
+        display: none;
+    }
+    .box4{
+        display: none;
+    }
+    .box8{
+        display: none;
+    }
+}
